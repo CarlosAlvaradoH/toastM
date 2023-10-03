@@ -1,0 +1,9 @@
+<div *ngFor="let item of toastService.items$ | async; let index = index" @verticalCollapse @triggerChildAnimation>
+  <labs-toast-item
+    [toast]="item"
+    [index]="index"
+    @slideIn
+    @slideOut
+  >
+  </labs-toast-item>
+</div>
